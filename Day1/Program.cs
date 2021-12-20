@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -10,13 +9,13 @@ namespace Day1
         static void Main(string[] args)
         {
             Console.WriteLine("Day One Solution!");
-            int partOneAnswer = partOne();
+            int partOneAnswer = PartOne();
             Console.WriteLine($"Part one anwer is: {partOneAnswer}");
-            int partTwoAnswer = partTwo();
+            int partTwoAnswer = PartTwo();
             Console.WriteLine($"Part two answer is: {partTwoAnswer}");
         }
 
-        public static int partOne()
+        public static int PartOne()
         {
             var input = File.ReadAllLines(@"Input.txt").Select(y => int.Parse(y)).ToList();
 
@@ -35,7 +34,7 @@ namespace Day1
             return total;
         }
 
-        public static int partTwo()
+        public static int PartTwo()
         {
             var input = File.ReadAllLines(@"Input.txt").Select(y => int.Parse(y)).ToList();
 
